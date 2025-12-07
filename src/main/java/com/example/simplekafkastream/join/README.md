@@ -41,7 +41,7 @@ $ bin/kafka-console-producer.sh --bootstrap-server my-kafka:9092 \
 
 KStream으로 사용되는 order 토픽에 이름을 메시지 키로 하고 주문 물품을 메시지 값으로 하는 데이터를 넣는다.
 ```shell
-bin/kafka-console-producer.sh --bootstrap-server my-kafka:9092 \
+$ bin/kafka-console-producer.sh --bootstrap-server my-kafka:9092 \
 --topic order \
 --property "parse.key=true" \
 --property "key.separator=:"
