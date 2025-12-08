@@ -1,5 +1,5 @@
 # 💻 실행 가이드
-KTable로 사용할 토픽과 KStream으로 사용할 토픽을 만들 때 코파티셔닝을 시키기 위해서는 둘 다 파티션 개수를 동이랗게 만들어야 한다.
+KTable로 사용할 토픽과 KStream으로 사용할 토픽을 만들 때 코파티셔닝을 시키기 위해서는 둘 다 파티션 개수를 동일하게 만들어야 한다.
 ```shell
 # address라는 이름의 Ktable 토픽 생성
 $ bin/kafka-topics.sh --create \
