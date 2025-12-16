@@ -10,7 +10,7 @@ $ bin/kafka-topics.sh --create \
 
 <br>
 
-KStreamJoinGlobalKTable 애플리케이션을 실행한다.
+`KStreamJoinGlobalKTable` 애플리케이션을 실행한다.
 
 <br>
 
@@ -36,6 +36,8 @@ $ bin/kafka-console-consumer.sh --bootstrap-server my-kafka:9092 \
 --property "print.key=true" \
 --property "key.separator=:" \
 --from-beginning
+# 결과에 iPhone와 Galaxy 관련 내용은 KStreamJoinKTable 실습에서 남은 데이터들까지 같이 조인됐기 때문에 발생된 거다.
+# 여기서는 iPone2와 Galaxy2 관련 내용만 보면 된다.
 kyeongchan:iPhone send to Gyeongju
 kyeongchan:Mac send to Seoul
 kyeongchan:iPhone2 send to Gyeongju

@@ -24,7 +24,7 @@ $ bin/kafka-topics.sh --create \
 
 <br>
 
-KStreamJoinKTable 애플리케이션을 실행시킨다.
+`KStreamJoinKTable` 애플리케이션을 실행시킨다.
 
 <br>
 

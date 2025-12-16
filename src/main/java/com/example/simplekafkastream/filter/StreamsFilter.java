@@ -27,8 +27,8 @@ public class StreamsFilter {
         // 스트림즈 애플리케이션과 연동할 카프카 클러스터 정보
         props.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, BOOTSTRAP_SERVERS);
 
-        // 스트림 처리를 위해 메시지 키와 메시지 값의 역직렬화, 직렬화 방식을 지정한다.
-        // 스트림즈 애플리케이션에서는 데이터를 처리할 때 메시지 키 또는 메시지 값을 역직렬화하여 사용하고 최종적으로 데이터를 토픽에 넣을 때는 직렬화해서 데이터를 저장한다.
+        /* 스트림 처리를 위해 메시지 키와 메시지 값의 역직렬화, 직렬화 방식을 지정한다.
+         * 스트림즈 애플리케이션에서는 데이터를 처리할 때 메시지 키 또는 메시지 값을 역직렬화하여 사용하고 최종적으로 데이터를 토픽에 넣을 때는 직렬화해서 데이터를 저장한다. */
         props.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass());
         props.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.String().getClass());
 
